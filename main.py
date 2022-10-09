@@ -1,4 +1,5 @@
 import requests
+from api_key import *
 
 endpoint = "https://api.assemblyai.com/v2/transcript/"
 
@@ -7,7 +8,7 @@ json = {
     "language_code": "en"
 }
 headers = {
-    "authorization": "f41535c22c8348fe808cac7291211cf7",
+    "authorization": API_KEY,
     "content-type": "application/json"
 }
 
